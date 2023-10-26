@@ -1,0 +1,44 @@
+ 
+tr td {
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    transition: 2s;
+}
+i {
+    font-size: 70px;
+    color: lightslategray;
+    font-style: normal;
+    text-shadow: 2px 2px white;
+    transition: 2s;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 3px 3px 5px black;
+}
+
+table tr:nth-child(2n) td:nth-child(2n+1),
+tr:nth-child(2n+1) td:nth-child(2n) {
+    background-color: black;
+}
+
+/* table tr:nth-child(8) td:nth-child(2n+1),tr:nth-child(7) td:nth-child(2n){
+    background-color:black;
+} */
+tr:nth-child(7) td i,
+tr:nth-child(8) td i {
+    color: lightskyblue;
+}
+tr:nth-child(1) td:hover {
+    transform: rotate3d(0, 1, 0.5, 3.142rad);
+}
+tr:nth-child(2) td:hover {
+    transform: rotate3d(0, 1, 0.5, 3.142rad);
+}
+tr:nth-child(7) td:hover {
+    transform: rotate3d(0, 1, 0.5, 3.142rad);
+}
+tr:nth-child(8) td:hover {
+    transform: rotate3d(0, 1, 0.5, 3.142rad);
+}
